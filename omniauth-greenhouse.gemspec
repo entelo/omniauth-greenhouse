@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'omniauth-greenhouse'
-  spec.version       = '1.3.1'
+  spec.version       = '1.3.2'
   spec.authors       = %w(timothy.frey)
   spec.email         = %w(tech@greenhouse.io)
   spec.description   = 'Integrate with Greenhouse with OmniAuth'
@@ -17,8 +17,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = %w(lib)
 
-  spec.add_development_dependency 'bundler', '~> 1.3'
+  spec.add_development_dependency 'bundler', '~> 2.5.7'
   spec.add_development_dependency 'rake'
 
-  spec.add_runtime_dependency 'omniauth', '>= 1.3.1', '< 2'
+  spec.add_runtime_dependency 'omniauth', '~> 2.0'
 end
